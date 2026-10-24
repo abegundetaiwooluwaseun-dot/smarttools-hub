@@ -1,0 +1,186 @@
+
+/* General settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #102a43;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #102a43, #2563eb);
+    color: white;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #38bdf8;
+    color: #102a43;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: white;
+}
+
+/* Tools section */
+.tools {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.tools h2,
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.tool-card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.tool-card p {
+    margin-bottom: 15px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #102a43;
+}
+
+#caption-result,
+#business-result,
+#quote-result {
+    margin-top: 15px;
+    overflow-wrap: anywhere;
+    font-weight: bold;
+    color: #047857;
+}
+
+/* About section */
+.about {
+    padding: 55px 8%;
+    text-align: center;
+    background: white;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .tools {
+        padding: 45px 6%;
+    }
+}
